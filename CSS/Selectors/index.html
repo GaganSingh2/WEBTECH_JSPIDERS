@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* TagName Selector */
+        h1{
+            background-color: aqua;
+            color: red;
+        }
+
+        /* Class Selector */
+        .rambo{
+            background-color: brown;
+            color: white;
+        }
+
+        /* Class Selector */
+        .jango{
+            background-color: chocolate;
+            color: gold;
+        }
+
+        /* ID Selector */
+        #bold{
+            background-color: darkblue;
+            color: cyan;
+        }
+
+        /* Universal Selector */
+        *{
+            margin: 10px;
+        }
+        li{
+            background-color: cornflowerblue;
+        }
+
+        /* Group Selector */
+        p,#bold,.rambo{
+            background-color: rgb(166, 166, 198);
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Universal Selecotr (*)</li>
+        <li>Tagname Selecotr (h1,p)</li>
+        <li class="rambo">Class Selecotr (.class)</li>
+        <li class="rambo">ID Selecotr (#id)</li>
+        <li>Group Selecotr (,)</li>
+    </ul>
+
+    <h1 class="rambo">Hello</h1>
+
+    <p class="jango" id="bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem itaque commodi consequatur. Voluptatem obcaecati quaerat deserunt quibusdam. Soluta ipsa laudantium ducimus blanditiis eaque autem quo sequi quos a culpa, fugiat hic unde fugit incidunt! Quod aliquam unde beatae saepe, tempore nemo. Adipisci nemo accusantium deleniti vel aut, nobis quisquam maxime.</p>
+
+    <h1 id="bold">Jspider</h1>
+
+    <b id="bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non nam est consectetur reiciendis eveniet omnis libero nihil, magni facere illo, sunt exercitationem dolor? Cum, ipsa repudiandae? Delectus repellat minima, adipisci expedita in quis quae ab nulla ratione eveniet, pariatur modi voluptas explicabo necessitatibus consectetur odit iste. Pariatur explicabo quibusdam est.</b>
+</body>
+</html>
