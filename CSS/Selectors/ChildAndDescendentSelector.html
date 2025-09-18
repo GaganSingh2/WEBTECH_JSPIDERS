@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+        /* Its select only specified tag existed in only the defind class body */
+        /* Child Combinators(>) */
+        .parent > h1{
+            color: red;
+            background-color: yellow;
+        }
+        .child > p{
+            color: aquamarine;
+        }
+        .child > h1{
+            color: blue;
+            background-color: aqua;
+        }
+
+        /* Its select the specified tag  exited inside the all defined class body or id*/
+        .sub_child h1{
+            background-color: blueviolet;
+            color: antiquewhite;
+        }
+        /* .parent h1{
+            background-color: yellowgreen;
+            color: aquamarine;
+        } */
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1>Child Heading</h1>
+        <b>Child bold</b>
+        <div class="child">
+            <h1>Sub Child</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, odio!</p>
+            <h1>SUb Child</h1>
+            <div class="sub_child">
+                <h1>Great Sub Child</h1>
+                <div class="great_subChild">
+                    <h1>Grand Great Sub Child</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
