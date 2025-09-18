@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Its select all the paragraph coming all the inside h1 tag */
+        h1 + p{
+            color: aquamarine;
+            background-color: blueviolet;
+        } 
+        /* Its select Paragraph just after the coming defined class body*/
+        .elder + p{
+            color: red;
+            background-color: yellow;
+        }
+
+        /* Its selct all paragraph coming inside the defind Class Body */
+        .second ~ p{
+            color: chocolate;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, atque.</p>
+    <h1 class="elder">First Sibling</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ex.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ex.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ex.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ex.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ex.</p>
+    <h1 class="second">Second Sibling</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ex.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ex.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ex.</p>
+    <a href="">Click Me</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ex.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ex.</p>
+</body>
+</html>
