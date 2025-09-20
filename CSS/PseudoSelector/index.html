@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            font-size: 100px;
+            color: red;
+            font-weight: bold;
+        }
+
+        p{
+            text-indent: 100px;
+        }
+
+        .para::first-line{
+            font-weight: bold;
+            font-size: 30px;
+            color: aqua;
+        }
+        h1{
+            text-align: center;
+            
+        }
+        h1::before{
+            content: "Gagan ";
+            font-size: 10px;
+        }
+        h1::after{
+            content: " in HTML";
+        }
+        input{
+            height: 40px;
+            width: 300px;
+            font-size: 30px;
+            color: brown;
+        }
+
+        input::placeholder{
+            color: darkred;
+            text-shadow: 0px 0px 10px gray;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="" placeholder="Enter the name">
+    <h1>Welcome To Gen-Z Era</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, laudantium!</p>
+    <div class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, praesentium?</div>
+</body>
+</html>
