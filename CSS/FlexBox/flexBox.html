@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 500px;
+            width: 500px;
+            background-color: aqua;
+            display: flex;
+
+            /* Gives the Top or Bottom */
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+
+            /* Gives the start point and end point */
+            /* flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse; */
+
+            /* For left to right setup */
+            /* justify-content: start;
+            justify-content: end;
+            justify-content: center; */
+/* 
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly; */
+
+            /* For Top to bottom setup */
+            /* align-items: start;
+            align-items: end;
+            align-items: center; */
+
+            /* Gives the gap between box */
+            /* gap: 30px; */
+
+
+        }
+        .child1,.child2,.child3{
+            width: 100px;
+            height: 100px;
+            color: white;
+           
+            font-size: 30px;
+
+        }
+        .child1{
+            /* Gives the size as ratio */
+            /* flex: 2; */
+             background-color: red;
+        }
+        .child2{
+            /* Gives the size as ratio */
+            /* flex: 1; */
+             background-color: blue;
+        }
+        .child3{
+            /* Gives the size as ratio */
+            /* flex: 1; */
+             background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">1</div>
+         <div class="child2">2</div>
+          <div class="child3">3</div>
+    </div>
+</body>
+</html>
