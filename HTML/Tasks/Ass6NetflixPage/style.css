@@ -1,0 +1,93 @@
+* {
+            margin: 0px;
+        }
+
+        body {
+            opacity: 0.9;
+            /* background:rgba(32, 32, 32, 0.647), url(./nflxbackpic.jpg); */
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                /* black transparent overlay */
+                url('./nflxbackpic.jpg');
+
+        }
+
+        .superpar {
+            /* background-color: rgba(0, 0, 0, 0.741); */
+            background: radial-gradient(rgba(25, 22, 22, 0.626), rgba(21, 21, 21, 0.383));
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0px 80px;
+        }
+
+        .inp {
+            display: flex;
+            align-items: center;
+        }
+
+        .bodyCon {
+            width: 40vp;
+            height: 60vp;
+            text-align: center;
+            padding: 120px;
+
+        }
+
+        #con {
+            color: aliceblue;
+            font-size: 68px;
+            font-weight: bolder;
+        }
+
+        .childbodycon {}
+
+        #con2 {
+            margin: -5px;
+            color: aliceblue;
+        }
+
+        #con3 {
+            margin: 40px;
+            color: aliceblue;
+        }
+
+        .childbodycon {
+            text-align: center;
+            margin-top: -20px;
+        }
+
+        .childbodycon>input {
+            margin: 0px;
+            border-radius: 5px;
+            width: 330px;
+            height: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.757);
+        }
+
+        .childbodycon>button {
+            border-radius: 5px;
+            background-color: rgb(228, 9, 21);
+            color: white;
+            font-size: 25px;
+            font-weight: 700;
+            width: 200px;
+            height: 55px;
+        }
+
+        #signin-but {
+            background-color: #e40915;
+            color: aliceblue;
+            font-weight: 600;
+            height: 30px;
+            width: 75px;
+            border-radius: 7px;
+            border: none;
+        }
+
+        #select-opt {
+            text-align: center;
+            height: 30px;
+            width: 95px;
+            border-radius: 7px;
+        }
