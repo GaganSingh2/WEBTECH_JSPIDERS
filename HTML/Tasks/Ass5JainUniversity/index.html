@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* background-image: url(./BackPhoto.webp); */
+            /* background-repeat: no-repeat;*/
+            /* margin-top: 8px;  */
+            background-color: rgb(252, 202, 22);
+            /* width: 1400px; */
+            height: 800px;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* padding: 10px 40px; */
+        }
+
+        .logo img {
+            width: 400px;
+            margin-top: 18px;
+            margin-right: 430px;
+        }
+
+        .phno {
+            background-color: rgb(4, 4, 78);
+            color: white;
+            font-size: 22px;
+            padding: 4px 21px;
+            border-radius: 38px;
+            margin-top: 31px;
+            width: 164px;
+            height: 31px;
+        }
+
+        .mid {
+            display: flex;
+            margin: 110px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 50px;
+            font-size: larger;
+            flex-wrap: wrap;
+        }
+
+        .deg {
+            font-weight: bold;
+            font-size: 42px;
+        }
+
+        .course {
+            font-size: 20px;
+            font-weight: bolder;
+            color: white;
+            margin: 40px 0px;
+        }
+
+        .course span {
+            background-color: rgb(8, 8, 87);
+            padding: 10px 10px;
+        }
+
+        .girlpic {
+            margin: -130px 0px;
+        }
+        .course_option{
+            width: 170px;
+        }
+        .rightForm{
+            width: 350px;
+            /* height: 200px; */
+            background-color: #f1efef;
+            padding: 30px;
+            border-radius: 4px;
+
+            text-align: center;
+            font-size: xx-large;
+        }
+        .enq{
+            margin-bottom: 20px;
+            font-size: 22px;
+            color: #2c2c2c;
+        }
+        
+        .about-us-con {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(8, 12, 97);
+            padding: 40px 0;
+            margin: 128px 0;
+            width: 1335px;
+            
+        }
+
+        .about-us {
+            width: 200px;
+            height: auto;
+            border: none;
+            text-align: center;
+        }
+
+        .about-us h1 {
+            color: yellow;
+            font-size: 32px;
+            margin: 0;
+        }
+
+        .about-us h2 {
+            color: white;
+            font-size: 18px;
+            margin: 5px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="logo">
+            <img src="./Jain-Online-Logo.addc71da.webp" alt="">
+        </div>
+        <a href="" class="phno">+91 9162036179</a>
+    </div>
+    <hr>
+    <div class="mid">
+        <div class="leftInfo">
+            <h2><big>Uplift your Career with</big> <br><span class="deg">Online Degree Programs</span></h2>
+            <div class="course">
+                <span>MBA | </span><span>MCA |</span><span>M.COM | </span><span>MA | </span><span>BBA |
+                </span><span>B.COM</span>
+            </div>
+            <img src="./UGC-logo.Down.webp" alt="UGC Logo" class="Ugc-Logo">
+        </div>
+        <div class="midInfo">
+            <img src="./GirlPhoto.png" alt="GirlPic's" class="girlpic">
+        </div>
+        <div class="rigthForm">
+            <form action="#get" align="center">
+                <label for=""><b class="enq">ENQUIRE NOW</b></label>
+                <br>
+                <input type="text" name="Name" id="" placeholder="Name*">
+                <br>
+                <input type="email" name="Name" id="" placeholder="Email*">
+                <br>
+                <input pattern="[0-9]{10}" type="text" name="Name" id="" placeholder="Phone no.*">
+                <br>
+                <select name="" id="" class="course_option">
+                    <option value="">Select Program*</option>
+                    <option value="">BCOM</option>
+                    <option value="">BCA</option>
+                    <option value="">BBA</option>
+                    <option value="">MBA</option>
+                    <option value="">MCOM</option>
+                    <option value="">MCA</option>
+                    <option value="">MA</option>
+                </select>
+                <br>
+                <select name="" id="" class="course_option">
+                    <option value="">Select Elective*</option>
+                </select>
+                <br>
+                <select name="" id="" class="course_option">
+                    <option value="">Select State*</option>
+                    <option value="">Bihar</option>
+                    <option value="">Karnataka</option>
+                    <option value="">Rajasthan</option>
+                    <option value="">Delhi</option>
+                </select>
+                <br>
+                <select name="" id="" class="course_option">
+                    <option value="">Select City*</option>
+                </select>
+                <br>
+                <input type="submit" name="" id="">
+            </form>
+        </div>
+        <hr>
+        <div class="child">
+            <div class="about-us-con">
+                <div class="about-us">
+                    <h1>40+</h1>
+                    <h2>In-Demand Electives</h2>
+                </div>
+                <div class="about-us">
+                    <h1>2,000 +</h1>
+                    <h2>Hiring Corporates</h2>
+                </div>
+                <div class="about-us">
+                    <h1>20,000 +</h1>
+                    <h2>Courses on LinkedIn Learning</h2>
+                </div>
+                <div class="about-us">
+                    <h1>0 Cost</h1>
+                    <h2>EMI Option</h2>
+                </div>
+            </div>
+        </div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+
+</html>
