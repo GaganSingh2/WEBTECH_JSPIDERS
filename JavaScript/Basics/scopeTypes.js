@@ -44,6 +44,7 @@ console.log("Block Scope By Using let and const keyword------");
     
 }
 // console.log(g); //ReferenceError(bcz it is accessible only inside the block)
+// console.log(h); //ReferenceError(bcz it is accessible only inside the block)
 // console.log(i); //90 (bcz here var work like Global not a Block)
 
 
