@@ -25,6 +25,26 @@ function test() {
     console.log(f);
 }
 test()
-// console.log(d); //ReferenceError
+// console.log(d); //ReferenceError (bcz it is accessible only inside the function)
+// console.log(e); //ReferenceError (bcz it is accessible only inside the function)
+// console.log(f); //ReferenceError (bcz it is accessible only inside the function)
+
+
+
+
+//3)Block Scope by Using let and const(declare inside the block)
+console.log("Block Scope By Using let and const keyword------");
+{
+    let g = 70
+    const h = 80
+    console.log(g);
+    console.log(h);
+
+    // var i = 90
+    
+}
+// console.log(g); //ReferenceError(bcz it is accessible only inside the block)
+// console.log(i); //90 (bcz here var work like Global not a Block)
+
 
 
