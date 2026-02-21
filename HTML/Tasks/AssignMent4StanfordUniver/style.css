@@ -1,7 +1,12 @@
-.banner{
+        .banner{
             /* display: inline-block; */
             text-align:  center;
             font-size: 25px;
+        }
+        #main{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
         }
         .con{
             width: 450px;
@@ -23,10 +28,7 @@
         .con a{
             text-decoration: none;
         }
-        #main{
-            display: flex;
-            justify-content: space-evenly;
-        }
+        
         h2{
             font-weight: bolder;
             font-size: 30px;
