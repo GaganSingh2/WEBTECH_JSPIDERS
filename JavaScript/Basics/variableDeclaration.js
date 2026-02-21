@@ -33,6 +33,15 @@ console.log(y);
 
 // let y //Re-Declaration, Re-Declaration + Initialization is not allowed
 
+//3)By Using const keyword
+console.log("By Using const keyword---------");
+const z = 100 //Declaration + Initialization
+console.log(z);
+
+// const p //Declaration, Initialization, Re-Initialization, Re-Declaration+Re-Initialization are not allow
+
+
+
 
 
 
