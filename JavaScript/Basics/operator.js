@@ -71,8 +71,8 @@ let h
 console.log("typeOf h: "+typeof h);
 console.log("typeOf null: "+typeof null); //Object (this is the bug of js, null is not really an object)
 
-console.log("typeOf gagan: "+typeof gagan);
-console.log("typeOf (typeOf gagan): "+typeof (typeof gagan));
+console.log("typeOf gagan: "+typeof 'gagan');
+console.log("typeOf (typeOf gagan): "+typeof (typeof 'gagan'));
 
 console.log("typeOf 10: "+typeof 10);
 console.log("typeOf (typeOf 10): "+typeof (typeof 10));
@@ -80,10 +80,10 @@ console.log("typeOf (typeOf 10): "+typeof (typeof 10));
 console.log("typeOf NaN: "+typeof NaN);
 console.log("typeOf (typeOf NaN): "+typeof (typeof NaN));
 
-//both give false bcz NaN is not equal to anything
-console.log("NaN==NaN: "+(NaN==NaN));
+//all 3 give false bcz NaN is not equal to anything
+console.log("NaN==NaN: "+(NaN==NaN)); 
 console.log("NaN===NaN: "+(NaN===NaN));
-console.log("NaN==4: "+(NaN==4));
+console.log("NaN==4: "+(NaN==4)); 
 console.log("NaN+4: "+(NaN+4)); //NaN (bcz NaN is not eqaul to anything so its not perfrom any operation)
 
 
