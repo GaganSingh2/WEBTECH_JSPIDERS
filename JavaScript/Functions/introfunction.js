@@ -9,7 +9,7 @@ function hello() {
     console.log("Hello Function");
 }
 
-// tmp() //if we call here then it will throw error bcz currently tmp store undefined and we try to call as function
+// tmp() //if we call here then it will throw error bcz currently tmp is not initialize and we try to call as function
 let tmp = function(){
     console.log("Tmp Function");
 }
