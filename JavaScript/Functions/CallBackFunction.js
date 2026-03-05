@@ -31,3 +31,28 @@ console.log("Add: "+calculate(5,10,sum));
 console.log("Add: "+calculate(5,10,sub));
 console.log("Add: "+calculate(5,10,mul));
 
+// CallBack Hell---------------
+console.log("CallBack Hell----------");
+function writeExam(callback){
+    console.log("Exam Written");
+    callback()
+}
+
+function evaluateExam(callback){
+    console.log("Paper Evaluated");
+    callback()
+}
+
+function announceResult(callback){
+    console.log("Result Announced");
+    callback()
+}
+
+writeExam(function(){
+    evaluateExam(function (){
+        announceResult(function (){
+            console.log("Pass/fail");
+            
+        })
+    })
+})
