@@ -29,3 +29,14 @@ function processUser(callback){
     console.log(callback("Gagan"));
 }
 processUser(greet)
+
+// Function return another function
+console.log("Function Return Another Function------");
+function multiply(a){
+    return function(b){
+        return a*b
+    }
+}
+let res = multiply(2)
+console.log("Multiply: "+res(5));
+
