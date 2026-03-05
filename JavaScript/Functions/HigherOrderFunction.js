@@ -40,3 +40,50 @@ function multiply(a){
 let res = multiply(2)
 console.log("Multiply: "+res(5));
 
+// Real-World Example on Payment Method
+console.log("Real-World Example on Payment Method--------")
+
+function payWithUPI(amount){
+    console.log("Don't back!!");
+    if (amount>0) {
+        console.log("Valid Amount!!");
+        console.log("Paid "+amount+" using UPI!!");
+        console.log("Payment Completed");
+    }
+    else{
+        console.log("Invalid Amount!!");
+        console.log("Payment InCompleted");
+    }
+}
+
+function payWithCard(amount){
+    console.log("Don't back!!");
+    if (amount>0) {
+        console.log("Valid Amount!!");
+        console.log("Paid "+amount+" using Card!!");
+        console.log("Payment Completed");
+    }
+    else{
+        console.log("Invalid Amount!!");
+        console.log("Payment InCompleted");
+    }
+}
+
+function payWithNetBanking(amount){
+    console.log("Don't back!!");
+    if (amount>0) {
+        console.log("Valid Amount!!");
+        console.log("Paid "+amount+" using NetBanking!!");
+        console.log("Payment Completed");
+    }
+    else{
+        console.log("Invalid Amount!!");
+        console.log("Payment InCompleted");
+    }
+}
+
+function proecessPayment(amount,paymentMethod){
+    console.log("Payment Started!!");
+    paymentMethod(amount)
+}
+proecessPayment(1000,payWithNetBanking)
