@@ -40,7 +40,7 @@ console.log("Sum: "+callMe(5,5));
 
 
 
-//4)Explicit Return: i.e. if the function has more than one line of code then return keyword and Curly Bracket are both required
+//4)Explicit Return: i.e. if the function has more than one line of code or if we want to use return keyword explicitly then Curly Bracket is required
 console.log("3) If Arrow Function has more than one line of code-----");
 let multiply = (a,b)=>{
     return a*b
