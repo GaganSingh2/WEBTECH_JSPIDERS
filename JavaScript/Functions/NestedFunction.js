@@ -57,3 +57,25 @@ let child = parentFunction()
 child() 
 
 
+// JavaScript Currying------
+console.log("JavaScript Currying--------------");
+//before currying
+function add(a,b,c){
+    return a+b+c
+}
+
+//After Currying
+function add(a){
+    return function(b){
+        return function(c){
+            return a+b+c
+        }
+    }
+}
+// console.log("Add: "+(add(1)));//Return both inner function
+// console.log("Add: "+(add(1)(2))); //Return the last inner function
+console.log("Add: "+(add(1)(2)(3))); //6
+
+
+
+
