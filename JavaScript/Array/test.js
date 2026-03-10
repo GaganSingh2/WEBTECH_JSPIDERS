@@ -1,3 +1,4 @@
+//Q)Decrease the all array elements by 10%
 // let arr = [110,150,200,450,750,900]
 // for(let i=0; i<arr.length; i++){
 //     arr[i] = arr[i]-(arr[i] * 10/100);
