@@ -185,3 +185,24 @@ console.log("lastIndexOf('a',2): "+res);
 
 res = str1.lastIndexOf('p',8)
 console.log("lastIndexOf('p',8): "+res);
+
+
+//15) includes(searchValue, startIndex)------------
+console.log("includes(searchValue, startIndex)------");
+str1 = 'i love java script'
+console.log("String: "+str1);
+
+res = str1.includes('love')
+console.log("includes('love'): "+res);
+
+res = str1.includes('love', 3)
+console.log("includes('love',3): "+res);
+
+res = str1.includes('le')
+console.log("includes('le'): "+res);
+
+res = str1.includes('javas')
+console.log("includes('javas'): "+res);
+
+res = str1.includes('java', 9)
+console.log("includes('java',9): "+res);
