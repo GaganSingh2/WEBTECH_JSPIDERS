@@ -119,3 +119,26 @@ let splitStr = 'hi gagan how are u'
 console.log("String: "+splitStr);
 let aSplit = splitStr.split(' ')
 console.log("After Split: "+aSplit);
+
+
+//12) concat(): join the 2 or more string and return new String
+// string1.concat(string2,string3,...........)
+console.log("concat()----------------");
+
+let string1 = 'Hello'
+let string2 = 'world'
+let res1 = string1.concat(string2)
+console.log("Result: "+res1);
+
+res1 = string1.concat(' ',string2)
+console.log("Result: "+res1);
+
+let string3 = 'hiii'
+res1 = string1.concat(" ",string2,' ',string3)
+console.log("Result: "+res1);
+
+console.log("Result: "+"Gagan ".concat("kumar ","singh"));
+
+let name = "Gagan"
+let msg = `Hello ${name}`
+console.log("Message: "+msg);
