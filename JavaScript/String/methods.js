@@ -142,3 +142,31 @@ console.log("Result: "+"Gagan ".concat("kumar ","singh"));
 let name = "Gagan"
 let msg = `Hello ${name}`
 console.log("Message: "+msg);
+
+
+//13) indexOf(searchValue, startIndex) startIndex is optional, -ve idx treated as 0 and first occurrence idx return otherwise -1
+console.log("indexOf(searchValue, startIdx)----------------");
+
+str1 = 'java script'
+console.log("String: "+str1);
+
+res = str1.indexOf('s')
+console.log("indexOf('s'): "+res);
+
+res = str1.indexOf('a') //start the searching from 0 index bydefault so res = 1
+console.log("indexOf('a'): "+res);
+
+res = str1.indexOf('a',2) //start the searching from 2 index so res = 3
+console.log("indexOf('a'): "+res);
+
+res = str1.indexOf('z')
+console.log("indexOf('z'): "+res);
+
+res = str1.indexOf('scr')
+console.log("indexOf('scr'): "+res);
+
+res = str1.indexOf('J')
+console.log("indexOf('J'): "+res);
+
+res = str1.indexOf('j',-1) //-ve index treated as a 0
+console.log("indexOf('j'): "+res);
