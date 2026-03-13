@@ -60,7 +60,7 @@ arep = brep.replaceAll('g','d')
 console.log("After Replacing: "+arep);
 
 
-//9) subString(startIndex, endIndex): extract from the given string
+//9) subString(startIndex, endIndex): extract subString from the given string,not support -ve idx, means treated as 0
 console.log("substring(startIdx, endIdx)----------------");
 let bstr = 'JavaScript'
 console.log("String: "+bstr);
@@ -82,3 +82,33 @@ console.log("substring(-4,-1): "+subStr);
 
 subStr = bstr.substring(-4) //negative index reset with 0
 console.log("substring(-4): "+subStr);
+
+subStr = bstr.substring(11,14) //if both idx are greater than the string length then js treated as both length of sting means (10,10) so Empty String
+console.log("substring(11,14): "+subStr);
+
+subStr = bstr.substring(4,15) //if index is out of bound then js treated as length of string so (4,10)
+console.log("substring(4,11): "+subStr);
+
+
+// 10)slice(startIdx, endIdx): extract the subString from the given string, support -ve idx, means don't treated as 0
+console.log("slice(startIdx, endIdx)------------------------");
+let sStr = 'javascript'
+console.log("String: "+sStr);
+
+let sliceStr =  sStr.slice(4)
+console.log("slice(4): "+sliceStr);
+
+sliceStr =  sStr.slice(0,4)
+console.log("slice(0,4): "+sliceStr);
+
+sliceStr =  sStr.slice(-4) //its count from end left-right
+console.log("slice(-4): "+sliceStr);
+
+sliceStr =  sStr.slice(-4,-1)
+console.log("slice(-4,-1): "+sliceStr);
+
+sliceStr =  sStr.slice(4,2) //if startIdx > endIdx then return Empty String
+console.log("slice(4,2): "+sliceStr);
+
+sliceStr =  sStr.slice(-4,-6) //if startIdx > endIdx then here startIdx=6 and endIdx = 4, slice(6,4) so return Empty String
+console.log("slice(-4,-6): "+sliceStr);
