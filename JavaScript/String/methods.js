@@ -220,3 +220,14 @@ console.log("charAt(4): "+res);
 res = str1.charAt(14) //if index is invalid then return empty string
 console.log("charAt(14): "+res);
 
+
+//17) startsWith(searchString, position)--------------
+console.log("startsWith(searchString, position)----------");
+str1 = 'javascript'
+console.log("String: "+str1);
+
+res = str1.startsWith('java')
+console.log("startsWith('java'): "+res);
+
+res = str1.startsWith('scr')
+console.log("startsWith('scr'): "+res);
