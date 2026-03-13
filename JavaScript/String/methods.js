@@ -42,3 +42,20 @@ btrim = ' hi '
 console.log("Before using trim() length of str: "+btrim.length);
 atrim = btrim.trim()
 console.log("After using trim() length of str: "+atrim.length);
+
+
+// 7)replace(searchValue, newValue): replace first occurrence only, case-sensitive
+console.log("replace(searchValue, newValue)-----------------");
+let brep = "gagan"
+console.log("Before Replacing: "+brep);
+let arep = brep.replace('g','d')
+console.log("After Replacing: "+arep);
+
+
+// 8)replaceAll(searchValue, newValue): replace all occurrence, case-sensitive
+console.log("replaceAll(searchValue, newValue)-----------------");
+brep = "gagan"
+console.log("Before Replacing: "+brep);
+arep = brep.replaceAll('g','d')
+console.log("After Replacing: "+arep);
+
