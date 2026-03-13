@@ -59,3 +59,26 @@ console.log("Before Replacing: "+brep);
 arep = brep.replaceAll('g','d')
 console.log("After Replacing: "+arep);
 
+
+//9) subString(startIndex, endIndex): extract from the given string
+console.log("substring(startIdx, endIdx)----------------");
+let bstr = 'JavaScript'
+console.log("String: "+bstr);
+
+let subStr = bstr.substring(4)
+console.log("substring(4): "+subStr);
+
+subStr = bstr.substring(4,7)
+console.log("substring(4,7): "+subStr);
+
+subStr = bstr.substring(7,4) //if stIdx > endIdx then automatically swap means stIdx=4, endIdx = 7
+console.log("substring(7,4): "+subStr);
+
+subStr = bstr.substring(-4,7) //negative index reset with 0 means(0,7)
+console.log("substring(-4,7): "+subStr);
+
+subStr = bstr.substring(-4,-1) //both reset with 0 means(0,0) so empty string
+console.log("substring(-4,-1): "+subStr);
+
+subStr = bstr.substring(-4) //negative index reset with 0
+console.log("substring(-4): "+subStr);
