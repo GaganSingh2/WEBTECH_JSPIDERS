@@ -112,3 +112,10 @@ console.log("slice(4,2): "+sliceStr);
 
 sliceStr =  sStr.slice(-4,-6) //if startIdx > endIdx then here startIdx=6 and endIdx = 4, slice(6,4) so return Empty String
 console.log("slice(-4,-6): "+sliceStr);
+
+
+// 11) split(separator): convert the string to array
+let splitStr = 'hi gagan how are u'
+console.log("String: "+splitStr);
+let aSplit = splitStr.split(' ')
+console.log("After Split: "+aSplit);
