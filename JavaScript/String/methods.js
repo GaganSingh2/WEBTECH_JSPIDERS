@@ -229,5 +229,47 @@ console.log("String: "+str1);
 res = str1.startsWith('java')
 console.log("startsWith('java'): "+res);
 
+res = str1.startsWith('java',1)
+console.log("startsWith('java',1): "+res);
+
 res = str1.startsWith('scr')
 console.log("startsWith('scr'): "+res);
+
+
+//18) endsWith(searchString, position)------------
+console.log("endsWith(searchString, position)------------");
+str1 = 'javascript'
+console.log("String: "+str1);
+
+res = str1.endsWith('script')
+console.log("endsWith('script'): "+res);
+
+res = str1.endsWith('Script')
+console.log("endsWith('Script'): "+res);
+
+res = str1.endsWith('java')
+console.log("endsWith('java'): "+res);
+
+res = str1.endsWith('java',4)
+console.log("endsWith('java'): "+res);
+
+
+//19) repeat(count)----------------
+console.log("repeat(count)------------");
+str1 = 'hi'
+console.log("Before Repeat: "+str1);
+
+res = str1.repeat(3)
+console.log("repeat(3): "+res);
+
+res = 'abc'.repeat(5)
+console.log("repeat(5): "+res);
+
+res = str1.repeat(0) //if count = 0, then Empty String
+console.log("repeat(0): "+res);
+
+// res = str1.repeat(-1) //if count < 0  then throw RangeError 
+// console.log("repeat(-1): "+res);
+
+res = str1.repeat(3.3)// convert into nearest integer value 3.3 becomes 3
+console.log("repeat(3.3): "+res);
