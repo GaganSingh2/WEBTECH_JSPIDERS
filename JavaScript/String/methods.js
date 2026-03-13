@@ -170,3 +170,18 @@ console.log("indexOf('J'): "+res);
 
 res = str1.indexOf('j',-1) //-ve index treated as a 0
 console.log("indexOf('j'): "+res);
+
+
+//14) lastIndexOf(searchValue, fromIndex)-----------
+console.log("lastIndexOf(searchValue, fromIndex)----------------");
+str1 = 'java script'
+console.log("String: "+str1);
+
+res = str1.lastIndexOf('a')
+console.log("lastIndexOf('a'): "+res);
+
+res = str1.lastIndexOf('a',2)
+console.log("lastIndexOf('a',2): "+res);
+
+res = str1.lastIndexOf('p',8)
+console.log("lastIndexOf('p',8): "+res);
