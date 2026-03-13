@@ -206,3 +206,17 @@ console.log("includes('javas'): "+res);
 
 res = str1.includes('java', 9)
 console.log("includes('java',9): "+res);
+
+
+//16) charAt(index)------------
+console.log("charAt(index)--------------");
+
+str1 = 'javascript'
+console.log("String: "+str1);
+
+res = str1.charAt(4)
+console.log("charAt(4): "+res);
+
+res = str1.charAt(14) //if index is invalid then return empty string
+console.log("charAt(14): "+res);
+
