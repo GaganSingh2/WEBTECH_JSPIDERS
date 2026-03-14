@@ -86,7 +86,7 @@ console.log("Before Sorting: "+arrSort);
 arrSort.sort()//it will convert all the number in string and the perfrom the unicode comparision instead of perfrom comparision on exact number.
 console.log("After Sorting without using compareFunction: "+arrSort);
 
-//to resolve this problem we have to use compareFuntion in the sort()
+//=>to resolve this problem we have to use compareFuntion in the sort()
 //for Ascending order: (a,b)=>a-b
 //for Descending order: (a,b)=>b-a
 
@@ -95,5 +95,15 @@ console.log("After Sorting in Ascending using compareFunction: "+arrSort);
 
 arrSort.sort((a,b)=>b-a)
 console.log("After Sorting in Descending using compareFunction: "+arrSort);
+
+
+// 7) reverse()
+console.log("reverse()------------");
+
+let revArr = new Array(2,3,5,6,7,8)
+console.log("Before Reversing: "+revArr);
+
+revArr.reverse()
+console.log("After Reversing: "+revArr);
 
 
