@@ -62,5 +62,9 @@ console.log("splice(2,0,3,4): "+arr);
 let remove = arr.splice(1,2) //start at index 1 and delete 2 elements
 console.log("splice(1,2): "+remove);
 
+arr.splice(1) // start at index 1 and delete all the elements after that
+console.log("splice(1): "+arr);
+
+
 
 
