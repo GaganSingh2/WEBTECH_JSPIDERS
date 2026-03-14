@@ -1,6 +1,6 @@
 // Mutating methods of Array-----------------------------
 console.log("Mutating Method of Array------------------");
-let arr = new Array(5,1,4,2,9)
+let arr = new Array(5,1,4,"Disha",2,9)
 
 // 1) push(ele1,ele2,.........,ele-n): add at the end of array
 console.log("push(ele1,ele2,.....,ele-n)---------------------");
@@ -27,7 +27,7 @@ console.log("Poped Element: "+arr2.pop());
 console.log("unshift(ele1,ele2,.....,ele-n)-----------");
 console.log("Before using unshift: "+arr);
 
-arr.unshift(10,20,"Disha") 
+arr.unshift(10,20) 
 // arr.unshift()//don't change
 console.log("After unshift: "+arr);
 
@@ -42,3 +42,25 @@ console.log("After shift: "+arr);
 console.log("Remove element: "+arr.shift());
 
  
+//5) splice(startIdx, deleteCount, item1, item2,.........,item-n)
+console.log("splice(startIdx, deleteCount, item1, item2,.........,item-n)---------------");
+
+console.log("Before using splice: "+arr);
+
+arr.splice(1,2) //start from index 1 and remove 2 elements
+console.log("splice(1,2): "+arr);
+
+arr.splice(1,0,15) //start at index 1 delete 0 elements insert 15 at startIdx
+console.log("splice(1,0,15): "+arr);
+
+arr.splice(1,1,25) //remove 1 element at index 1, and insert 25
+console.log("splice(1,1,25): "+arr);
+
+arr.splice(2,0,3,4) //start at index 2, delete 0 element and insert 3,4 from start at index 2.
+console.log("splice(2,0,3,4): "+arr);
+
+let remove = arr.splice(1,2) //start at index 1 and delete 2 elements
+console.log("splice(1,2): "+remove);
+
+
+
