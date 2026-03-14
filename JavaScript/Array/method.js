@@ -66,5 +66,34 @@ arr.splice(1) // start at index 1 and delete all the elements after that
 console.log("splice(1): "+arr);
 
 
+//6) sort(compareFunction): bydefault it is convert all elements in string then perfrom Unicode comparision and sort on that basis.
+// compareFunction is mandatory if we want to sort the number.
+console.log("sort(compareFunction)--------------");
+
+let arrSort = ["Gagan","Disha","Karan","Aman"]
+console.log("Before Sorting: "+arrSort);
+
+arrSort.sort()
+console.log("After Sorting in Ascending: "+arrSort); //Ascending by Default
+arrSort.sort((a,b)=>b.localeCompare(a))
+console.log("After Sorting in Descending using compareFunction: "+arrSort); //Descending by using compareFunction
+
+let arr5=["Apple",{},"apple",()=>{},"Ball",10,"ball",30,"zomato","swiggy",40,"Instagram","zepto","Minutes"]
+console.log("Sort: "+arr5.sort())
+
+arrSort = [10,100,2,200,19]
+console.log("Before Sorting: "+arrSort);
+arrSort.sort()//it will convert all the number in string and the perfrom the unicode comparision instead of perfrom comparision on exact number.
+console.log("After Sorting without using compareFunction: "+arrSort);
+
+//to resolve this problem we have to use compareFuntion in the sort()
+//for Ascending order: (a,b)=>a-b
+//for Descending order: (a,b)=>b-a
+
+arrSort.sort((a,b)=>a-b)
+console.log("After Sorting in Ascending using compareFunction: "+arrSort);
+
+arrSort.sort((a,b)=>b-a)
+console.log("After Sorting in Descending using compareFunction: "+arrSort);
 
 
