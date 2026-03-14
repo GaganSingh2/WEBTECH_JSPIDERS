@@ -131,6 +131,31 @@ revArr.fill(19,-2,1) //its not work bcz right to left is not possible
 console.log("fill(9,-2,1): "+revArr);
 
 
+//9)copyWithin(target,startIdx,endIdx)
+console.log("copyWithin(target,startIdx,endIdx)---------------");
+revArr = [1,2,3,4,5]
+console.log("Before using copyWithin(): "+revArr);
+
+revArr.copyWithin(2) //sIdx=0,eIdx=length-1 so copy first 2 element from 0 index and then replace with element
+console.log("copyWithin(2): "+revArr);
+
+revArr.copyWithin(0,2) //copy element from index 2 to len-1 and then replace from index 0
+console.log("copyWithin(0,2): "+revArr);
+
+revArr.copyWithin(0,2,4) //copy element from index 2 to 3 and replace from index 0 till len-1
+console.log("copyWithin(0,2,4): "+revArr);
+
+revArr.copyWithin(-2,0) //copy element from index 0 to len-1 and replace from index -2 till -2
+console.log("copyWithin(-2,0): "+revArr);
+
+revArr.copyWithin(1,2) //copy element from index 2 to len-1 and replace from index 1 till len-1
+console.log("copyWithin(1,2): "+revArr);
+
+revArr.copyWithin(1,-4,-1) //no changes
+console.log("copyWithin(1,-4,-1): "+revArr);
+
+
+
 
 
 
