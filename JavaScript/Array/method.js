@@ -107,3 +107,30 @@ revArr.reverse()
 console.log("After Reversing: "+revArr);
 
 
+//8)fill(value, startIdx, endIdx): startIdx and  endIdx is optional if not passed then it take (0,length-1)as a default
+console.log("fill(value, startIdx, endIdx)--------");
+console.log("Without using fill(): "+revArr);
+
+revArr.fill(9)
+console.log("fill(9): "+revArr); //replace all elements with 9
+
+revArr.fill(10,2) //replace all elements with 10 from index 2nd 
+console.log("fill(10,2): "+revArr);
+
+revArr.fill(1,1,4) //replace the element from index 1 to 3 with 1(endIdx is exclude)
+console.log("fill(1,1,4): "+revArr);
+
+revArr.fill(5,-2,5) //(-2,5) become automatically (-2,-1), so replace the element from index -2 to -2 with 5
+console.log("fill(5,-2,5): "+revArr);
+
+
+revArr.fill(0,-4,-1) //replace the element from index -4 to -2 with value 0
+console.log("fill(0,-4,-1): "+revArr);
+
+revArr.fill(19,-2,1) //its not work bcz right to left is not possible
+console.log("fill(9,-2,1): "+revArr);
+
+
+
+
+
