@@ -1,4 +1,4 @@
-// Mutating methods of Array-----------------------------
+// Mutating methods of Array: means change in original array-----------------------------
 console.log("Mutating Method of Array------------------");
 let arr = new Array(5,1,4,"Disha",2,9)
 
