@@ -75,6 +75,22 @@ jArr = [1,[2,3],4]
 console.log("join('-'): "+jArr.join("-"));
 
 
+//9)flat(depth): creating new by flatting nested arrays, default depth=1
+console.log("flat(depth)------------");
+arr = [1,[2,3]]
+console.log("flat(): "+arr.flat());
+
+arr = [1,[2,[3]]]
+console.log("flat(): "+arr.flat(2));
+
+arr = [1, , 2, [ ,3]] //remove empty slots
+console.log("flat(): "+arr.flat());
+
+console.log("flat(infinity): "+arr.flat(Infinity)); //if don't know depth then passs infinity
+
+
+
+
 
 
 
