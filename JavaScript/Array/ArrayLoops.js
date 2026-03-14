@@ -1,15 +1,15 @@
-let arr = [10,20,30,40,50]
+// Array Loops-----------
+console.log("Array Loops----------------");
 
-// forof loop to print the value
-console.log("Print the Value: ");
-for(let ele of arr){
-    console.log(ele);
+
+// 1)for of()
+console.log("for of()----------");
+let snacks = ["Biscuit", "Chips", "Chocolate"];
+for (let items of snacks) {
+    console.log("Item: "+items);
 }
 
-
-// forin loop to print the indexes
-console.log("Print the index:");
-for(let idx in arr){
-    console.log(idx);
-    
+let str = "Dishaaaa"
+for(let ch of str){
+    console.log("Character: "+ch);
 }
