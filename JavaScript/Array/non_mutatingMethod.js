@@ -36,3 +36,46 @@ console.log("Array1: "+arr1);
 console.log("Array2: "+arr2);
 let newArr = arr1.concat(arr2)
 console.log("New Array: "+newArr);
+
+
+//6) slice(startIndex, endIdx): return a copy of a portion of an array
+console.log("slice(startIndex, endIdx)------------------");
+console.log("Before using slice: "+arr);
+
+let sliced = arr.slice(1,2)
+console.log("slice(1,2): "+sliced);
+
+sliced = arr.slice(1,-2)
+console.log("slice(1,-2): "+sliced);
+
+sliced = arr.slice(-1,-2)
+console.log("slice(-1,-2): "+sliced);
+
+
+// 7)toString(): convert into string
+console.log("toString()--------------");
+console.log("toString(): "+arr1.toString());
+
+
+//8) join(separator): convert array elements into string by using custome separtor
+console.log("join(separator)-------------");
+let jArr = [1,2,3,4,5]
+console.log("Before using join(): "+jArr);
+
+console.log("join(): "+jArr.join());//default separtor
+jArr = ["Disha","Gagan","Karan"]
+console.log("join(''): "+jArr.join(""));
+console.log("join(' '): "+jArr.join(" "));
+
+jArr = [1, ,3]
+console.log("join(0): "+jArr.join(0));//after each value put 0
+console.log("join('-'): "+jArr.join("-"));//after each value put -;
+
+jArr = [1,[2,3],4]
+console.log("join('-'): "+jArr.join("-"));
+
+
+
+
+
+
