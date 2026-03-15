@@ -7,3 +7,10 @@ for(let idx in prices){
      console.log("After 10% Discount: "+prices[idx]);
 }
 
+
+// Q2)WAP to reverse the given string
+let str = 'javascript'
+console.log("Before Reverseing: "+str);
+
+let res = str.split("").reverse().join("");
+console.log("After Reversing: "+res);
