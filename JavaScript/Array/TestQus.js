@@ -83,3 +83,14 @@ for(let ele of arr){
 console.log("Number: "+number);
 console.log("String: "+string);
 
+
+//Q6)Reverse the each element of array
+console.log("Q)Reverse the each element of array");
+
+let revName = ["Gagan","Disha","Karan","Vishal"]
+console.log("Before Reversing: "+revName);
+
+revName.forEach((ele,idx)=>{
+    revName[idx] = ele.split("").reverse().join("")
+})
+console.log("After Reversing: "+revName);
