@@ -14,3 +14,13 @@ console.log("Before Reverseing: "+str);
 
 let res = str.split("").reverse().join("");
 console.log("After Reversing: "+res);
+
+// Q3) Find the Frequency for each character in given string
+console.log("Q)Find the Frequency for each character in given string");
+str = "Gagan kumar singh"
+let frequency = str.split("").reduce((acc,currVal)=>{
+
+    acc[currVal] = (acc[currVal] || 0)+1;
+    return acc
+},{})
+console.log("Frequency: ", frequency);
