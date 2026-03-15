@@ -33,3 +33,41 @@ num.forEach((val,idx)=>{
     console.log("After Discount: "+num[idx]);
     
 })
+
+
+//1)map(function(element,index,array))
+console.log("map(function(element,index,array))--------------");
+num = [1,2,3,4,5,6]
+console.log("Before using map((): "+num);
+let res = num.map((val)=>{
+    return val ** 2
+}) 
+console.log("map(val): "+res);
+
+res = num.map((val,idx)=>{
+    return val + idx
+})
+console.log("map(val,idx): "+res);
+
+// Q)Convert each word in UpperCase
+console.log("Q)Convert each word in UpperCase-----");
+
+let ar = ["Gagan","Disha","Karan","Aman"]
+arr = ar.map((val)=>{
+    return val.toUpperCase()
+})
+console.log("map(val): "+arr);
+
+//Q)In given array if element is even then sqaure them otherwise cube.
+console.log("Q)In given array if element is even then sqaure them otherwise cube.");
+console.log("Before Array: "+num);
+arr = num.map((val)=>{
+    if(val % 2==0){
+        return val ** 2
+    }
+    else{
+        return val ** 3
+    }
+})
+console.log("Result Array: "+arr);
+
