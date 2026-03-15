@@ -98,4 +98,31 @@ let odd = num.filter((val)=>{
 })
 console.log("Odd Array: "+odd);
 
+console.log("Q)Find user, age is greater than 20");
 
+let users = [
+ {name:"Aman", age:19},
+ {name:"Gagan", age:21},
+ {name:"Disha", age:22}
+];
+let result = users.filter((user)=>{
+    return user.age>20
+})
+console.log("User: ", result);
+
+
+//5)some(callbackFunction(element,idx,array)):return true,if any one element satisfies the given condition
+console.log("some(callbackFunction(element,idx,array))---------");
+num = [10,8,16,6,9,4,15]
+console.log("Before some(): "+num);
+res = num.some((val)=>{
+    return val % 2===0
+})
+console.log("Even found: "+res);
+
+num = [10,8,16,6,8,4,14]
+console.log("Before some(): "+num);
+res = num.some((val)=>{
+    return val % 2!==0
+})
+console.log("Odd found: "+res);
