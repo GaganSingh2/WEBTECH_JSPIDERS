@@ -33,5 +33,20 @@ for(let left = 0; left<arr.length; left++){
         right++
     }
 }
-console.log("After Moving 0;s: "+arr);
+console.log("After Moving 0;s: "+arr); //other appraoch is using filter() store the zero and non-zero in 2 diff array after that concat both array
 
+//Q3) Move all 0's to the first of array
+console.log("Q)Move all 0's to the first of array");
+arr = [0,2,0,4,0,1,0]
+console.log("Before Moving 0's: "+arr);
+
+let left = arr.length-1
+for(let right = arr.length-1; right>=0; right--){
+    if(arr[right] != 0){
+        let tmp = arr[right]
+        arr[right] = arr[left]
+        arr[left] = tmp
+        left--
+    }
+}
+console.log("After Moving 0;s: "+arr);
