@@ -126,3 +126,56 @@ res = num.some((val)=>{
     return val % 2!==0
 })
 console.log("Odd found: "+res);
+
+
+//6)every(callbackFunction(element,idx,array)):return true,if all element satisfies the given condition, otherwise false
+console.log("every(callbackFunction(element,idx,array))---------");
+num = [10,8,16,6,9,4,15]
+console.log("Before every(): "+num);
+res = num.every((val)=>{
+    return val % 2===0
+})
+console.log("All Even found: "+res);
+
+num = [10,8,16,6,8,4,14]
+console.log("Before every(): "+num);
+res = num.every((val)=>{
+    return val % 2===0
+})
+console.log("All Even found: "+res);
+
+
+//7)reduce(callbackFunction(accumulator,currElement,idx,array)): used to reduce the array to a single value, accumulator means stores the result from previous iteration, it is accept initial value as second argument(optional)
+console.log("reduce(callbackFunction(accumulator,currElement,idx,array))---------");
+num = [1,2,3,4]
+console.log("Before using reduce(): "+num);
+console.log("Q) Find the sum of elements in arrray");
+let sum = num.reduce((acc,currVal)=>{
+    return acc+currVal
+},0) //here, 0 is initial value as second argument this is store in acc
+console.log("Sum: "+sum);
+
+// Q) Find the sum of elements in array
+num = [10,22,3,20,43,1,0]
+console.log("Before using reduce(): "+num);
+console.log("Q) Find the sum of elements in arrray");
+let max = num.reduce((acc,currVal)=>{
+    return acc > currVal ? acc: currVal
+})
+console.log("Maximum value: "+max);
+
+// Q)Find the frequency for each digit in given array
+console.log("Q)Find the frequency for each digit in given array");
+num = [1, 2, 3, 4, 5, 6, 3, 2, 1];
+console.log("Array: "+num);
+
+let frequency = num.reduce((acc,currVal)=>{
+    // console.log(acc);
+    
+    acc[currVal] = (acc[currVal] || 0)+1
+    return acc
+},{})
+console.log("Frequency: ", frequency);
+
+
+
