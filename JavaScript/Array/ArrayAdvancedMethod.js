@@ -2,7 +2,7 @@
 console.log("Array Advanced Method------------");
 
 //1)forEach(function(element,index,array))
-console.log("forEach(function(element,index,array))--------------");
+console.log("forEach(callbackfunction(element,index,array))--------------");
 let arr = ["Gagan","Disha","Karan","Aman"]
 console.log("After using Basic forEach(): ");
 let ele = arr.forEach(function(element){
@@ -36,7 +36,7 @@ num.forEach((val,idx)=>{
 
 
 //1)map(function(element,index,array))
-console.log("map(function(element,index,array))--------------");
+console.log("map(callBackfunction(element,index,array))--------------");
 num = [1,2,3,4,5,6]
 console.log("Before using map((): "+num);
 let res = num.map((val)=>{
@@ -70,4 +70,16 @@ arr = num.map((val)=>{
     }
 })
 console.log("Result Array: "+arr);
+
+
+//3)find(callbackFunction(element,idx,array)):return first element if condition is true otherwise undefined
+console.log("find(callbackFunction(element,idx,array))-------------");
+num = [10,8,16,6,9,4,15]
+console.log("Before using find(): "+num);
+res = num.find((el,i)=>{
+    console.log("Iteration: "+(i));
+    return el>10
+})
+console.log("Element: "+res);
+
 
