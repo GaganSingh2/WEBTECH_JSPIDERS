@@ -83,3 +83,19 @@ res = num.find((el,i)=>{
 console.log("Element: "+res);
 
 
+
+//4)filter(callbackFunction(element,idx,array)):return new array, this array contain only satisfies the condition
+console.log("filter(callbackFunction(element,idx,array))---------");
+num = [10,8,16,6,9,4,15]
+console.log("Befor filter(): "+num);
+
+let even = num.filter((val)=>{
+    return val % 2===0
+})
+console.log("Even Array: "+even);
+let odd = num.filter((val)=>{
+    return val % 2!==0
+})
+console.log("Odd Array: "+odd);
+
+
