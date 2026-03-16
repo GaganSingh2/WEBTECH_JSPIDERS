@@ -83,3 +83,15 @@ console.log("Name: ",childObj.name); //called by properties
 childObj.printName() //called by method
 
 
+console.log("Other wayss----");
+let ParentObj = {
+    name: "karan"
+}
+
+let ChildObj = Object.create(ParentObj,{
+    age: {value:22}
+})
+console.log("Name: "+ChildObj.name);
+console.log("Age: "+ChildObj.age);
+
+
