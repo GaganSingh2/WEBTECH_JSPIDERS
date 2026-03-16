@@ -40,3 +40,28 @@ console.log("Player2 Info: ", player2);
 
 let player3 = new Player("KL Rahul","DC",1);//initialize the properties using Constructor of function
 console.log("Player3 Info: ", player3);
+
+
+//4)By Using Class(ES6): used to define object blueprint and initialize later, works similary to constructor function
+console.log("By Using Class(ES6)-------------");
+class Person{
+    constructor(name,age){
+        this.name = name;
+        this.age = age;
+    }
+}
+
+let p1 = new Person("Gagan", 22);
+console.log("Person1: ",p1);
+
+let p2 = new Person("Karan", 20);
+console.log("Person2: ",p2);
+
+
+//4)By Using Object.assign(): Copies properties from one or more objects into a target object.
+console.log("By Using Object.assign()-------------");
+let obj1 = {name: "Gagan"}
+let obj2 = {skill: "Java"}
+
+let finalObj = Object.assign({},obj1,obj2)//{}:new empty object (target) and properties of obj1 and obj2 are copied into the new object
+console.log("Person Info: ",finalObj);
