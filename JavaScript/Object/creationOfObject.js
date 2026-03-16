@@ -58,10 +58,28 @@ let p2 = new Person("Karan", 20);
 console.log("Person2: ",p2);
 
 
-//4)By Using Object.assign(): Copies properties from one or more objects into a target object.
+//5)By Using Object.assign(): Copies properties from one or more objects into a target object.
 console.log("By Using Object.assign()-------------");
 let obj1 = {name: "Gagan"}
 let obj2 = {skill: "Java"}
 
 let finalObj = Object.assign({},obj1,obj2)//{}:new empty object (target) and properties of obj1 and obj2 are copied into the new object
 console.log("Person Info: ",finalObj);
+
+
+//6)By Using Object.create(): Create a new object with specified prototype. This means the new object can inherit properties and methods from another object.
+
+console.log("By Using Object.create()-------------");
+
+let parentObj = { //Parent class
+    name: "Gagan", //properties
+    printName(){//Method
+        console.log("Name: "+this.name);
+    }
+}
+
+let childObj = Object.create(parentObj) //new childObject and its prototype is ParentObj, so it can access the parentObj properties and methods.
+console.log("Name: ",childObj.name); //called by properties
+childObj.printName() //called by method
+
+
