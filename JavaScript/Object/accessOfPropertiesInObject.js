@@ -48,3 +48,4 @@ let myDegree = "degree"
 console.log("Degree: "+myInfo[myDegree]);
 let myCGPA = "cgpa"
 console.log("CGPA: "+myInfo[myCGPA]);
+
