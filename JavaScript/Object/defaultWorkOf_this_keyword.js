@@ -63,3 +63,14 @@ obj2.demo();
 // bnf()
 // let bnf1 = demo.bind(obj2,22,"Java")
 // bnf1("Spring Boot")//if we try to override the argument but it is automatically bind the value at calling bind() time means here Java print as answer instead of Spring Boot
+
+
+
+
+// Using strict mode we prevent window object to undefined----
+// "use strict";
+// function greet1(){
+    // console.log(this.name); //undefiend
+//     console.log(this); //undefined in Browser or Global object in Node.js Environment
+// }
+// greet1()
