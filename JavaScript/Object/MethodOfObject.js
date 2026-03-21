@@ -61,9 +61,44 @@ let player = {
     jersyNum: 18,
     teamName: "RCB"
 }
-console.log("Before Updating: ",player);
+console.log("Before Object.seal(player): ",player);
 Object.seal(player)
 player.name = "Virat Kohli" //Updating allow
 player.age = 32 //adding new properties not allow
 delete player.name //deleting properties not allow
-console.log("After Updating: ",player);
+console.log("After Object.seal(player): ",player);
+
+
+// 5)Object.freeze(objName): prevent adding and deleting as well as updating properties also means Completely Immutable.
+console.log("Object.freeze(objName)--------------");
+player = {
+    name: "Virat",
+    jersyNum: 18,
+    teamName: "RCB"
+}
+console.log("Before Object.freeze(player): ",player);
+Object.freeze(player)
+player.name = "Virat Kohli" //Updating not allow
+player.age = 32 //adding new properties not allow
+delete player.name //deleting properties not allow
+console.log("After Object.freeze(player): ",player);
+
+
+// 6)Object.isFrozen(objName): checks whether an object is frozen
+console.log("Object.isFrozen(objName)--------------------");
+let user2 = {
+    name: "Gagan",
+}
+console.log("User2 isFrozen: ",Object.isFrozen(user2));
+Object.freeze(user2) //make object as frozen
+console.log("User2 isFrozen: ",Object.isFrozen(user2));
+
+
+// 7)Object.isSealed(objName): checks whether an object is Sealed
+console.log("Object.isSealed(objName)--------------------");
+let user3 = {
+    name: "Gagan",
+}
+console.log("User3 isSealed: ",Object.isSealed(user3));
+Object.seal(user3)// make object as sealed
+console.log("User2 isSealed: ",Object.isSealed(user3));
