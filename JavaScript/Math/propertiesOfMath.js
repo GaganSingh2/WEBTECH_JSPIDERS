@@ -1,7 +1,7 @@
 // In-Built Properties in Math Object---------------
 console.log("In-Built Properties in Math Object-------------------");
 
-// 1)Math.PI: represent the ratio of the circumference of a circle to its diameter, approximately 3.14159
+// 1)Math.PI: represent the ratio of the circumference(total boundary) of a circle to its diameter, approximately 3.14159
 console.log("1)Math.PI---------------");
 let pi = Math.PI
 console.log("Value of pi: "+pi);
