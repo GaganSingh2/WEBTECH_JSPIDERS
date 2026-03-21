@@ -73,3 +73,11 @@ console.log("10)Math.max(num1,num2,num3......)------------------");
 console.log("math.max(27,3,4,1,5,6): "+Math.max(27,3,4,1,5,6));
 console.log("Math.max(-27,-3,-4,-1,-5,-6): "+Math.max(-27,-3,-4,-1,-5,-6));
 console.log("Math.max(6,6,6): "+Math.max(-6,-6,-6,0));
+
+
+// 11)Math.random(): generate a random decimal number between 0(inclusive) to 1 (exclusive) eg: 0.43, 0.12434 etc
+
+console.log("11)Math.random()-------------------");
+console.log("Math.random(): "+Math.random());
+console.log("Math.random(): "+Math.random());
+console.log("Math.random(): "+Math.random());
