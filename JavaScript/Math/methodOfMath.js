@@ -53,3 +53,23 @@ console.log("7)Math.cbrt(number)------------------");
 console.log("math.cbrt(27): "+Math.cbrt(27));
 console.log("math.cbrt(-27): "+Math.cbrt(-27));
 console.log("math.cbrt(23): "+Math.cbrt(23));
+
+
+// 8)Math.abs(number): return the absolute(positive) value of a number means convert the -ve number in +ve
+console.log("8)Math.abs(number)------------------");
+console.log("math.abs(27): "+Math.abs(27));
+console.log("math.abs(-27): "+Math.abs(-27));
+
+
+// 9)Math.min(num1,num2,num3......): return the smallest number
+console.log("9)Math.min(num1,num2,num3......)------------------");
+console.log("math.min(27,3,4,1,5,6): "+Math.min(27,3,4,1,5,6));
+console.log("Math.min(27,-3,4,1,0,-5,6): "+Math.min(27,-3,4,1,0,-5,6));
+console.log("Math.min(6,6,6): "+Math.min(6,6,6));
+
+
+// 10)Math.max(num1,num2,num3......): return the largest number
+console.log("10)Math.max(num1,num2,num3......)------------------");
+console.log("math.max(27,3,4,1,5,6): "+Math.max(27,3,4,1,5,6));
+console.log("Math.max(-27,-3,-4,-1,-5,-6): "+Math.max(-27,-3,-4,-1,-5,-6));
+console.log("Math.max(6,6,6): "+Math.max(-6,-6,-6,0));
