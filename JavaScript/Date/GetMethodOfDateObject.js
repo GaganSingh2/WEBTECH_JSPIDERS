@@ -39,6 +39,6 @@ console.log("5)getSeconds()------------------");
 console.log("Seconds: "+date.getSeconds());
 
 
-// 8)getMilliseconds(): return the milliseconds(0-999)
+// 8)getMilliseconds(): return the milliseconds(0-999){1000 ms = 1 sec}
 console.log("8)getMilliseconds()------------------");
 console.log("Milliseconds: "+date.getMilliseconds());
