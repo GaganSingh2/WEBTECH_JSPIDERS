@@ -15,4 +15,4 @@ if(months<0){
     months += 12
 }
 
-console.log(`Total Experence: ${years} and ${months} and ${days}`);
+console.log(`Total Experence: ${years} years and ${months} months and ${days} days`);
