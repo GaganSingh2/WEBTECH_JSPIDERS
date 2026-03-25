@@ -64,15 +64,28 @@ console.log("4)History---------------------");
 console.log(history);
 
 //a)history.forward(): goes to the next page(if available) otherwise return undefine
-history.forward()
+// history.forward()
 
 //b)history.back(): goes to the previous page(if available) otherwise return undefine
-history.back()
+// history.back()
 
 //c)history.go(): goes to the specific page in history(if available) otherwise return undefine
-history.go(2)//for forward page
-history.go(-2) //for backward page
-history.go(0)//reload the same page
+// history.go(2)//for forward page
+// history.go(-2) //for backward page
+// history.go(0)//reload the same page
+
+
+
+//5)navigator: provide info about the browser like appname, version, online
+console.log("5)Navigator---------------------")
+console.log(navigator);
+
+//a)navigator.onLine: detect internet connection. if internet connected then return true, otherwise false.
+console.log(navigator.onLine);
+
+//b)navigator.userAgent: it contains info like browser name, OS info and version
+console.log(navigator.userAgent);
+
 
 
 
