@@ -137,7 +137,56 @@ console.log("b)alert()------");
 
 //c)confirm(): it will display a popup message with OK & CANCEL button. used for Delete confirmation, Logout confirmation etc...
 console.log("c)confirm()------");
-let res = confirm("Are u sure for Logout?")
-console.log("Confirm: "+res);
+// let res = confirm("Are u sure for Logout?")
+// console.log("Confirm: "+res);
 
 
+//d)setTimeout(callBackfunction, delay):it hold the execution until the completion of specified or given time. time taken in milliseconds.
+console.log("d)setTimeout(callBackfunction, delay)-----");
+// let timeId = setTimeout(()=>{
+//     console.log("Hello JavaScript!");
+// },5000)
+// timeId //after completion of time this is execute
+// console.log("JS"); //1-print
+// console.log("WebTech");//2-print
+
+
+//e)clearTimeout(setTimeout variableName):it will stop the working of the setTimeout() method
+console.log("e)clearTimeout(variableName)-----");
+let timeId1 = setTimeout(()=>{
+    console.log("Hello JavaScript!");
+},5000)
+clearTimeout(timeId1)
+
+
+// f)setInterval(callback_function, intervalTime):it will perform the same task multiple times within the time gap of interval time.
+console.log("f)setInterval(callback_function, intervalTime)-----");
+// let setInter = setInterval(()=>{
+//     console.log("Hello JavaScript!!");
+    
+// },2000)
+// setInter
+
+
+// g)clearInterval(setintervalVariableName):it will stop the working of setInterval() method
+console.log("g)clearInterval(setintervalVariableName)-----");
+let setInter = setInterval(()=>{
+    console.log("Hello JavaScript!!");
+    
+},2000)
+setInter
+clearInterval(setInter)
+
+
+//h)open(url,tabProperty, height and width etc): it help to open a new webpage in same tab or new tab.
+console.log("h)open(url)---");
+let openPage = open("https://www.amazon.com/","_blank","height=500px width=500px")
+
+
+
+//i)close(openPageVariableName): it help to close the current webpage.
+console.log("i)close(openPageVariableName)---");
+let newPage = open("https://www.flipkart.com/","_blank")
+setTimeout(()=>{
+    newPage.close()
+},3000) //after 3 sec automatically close
