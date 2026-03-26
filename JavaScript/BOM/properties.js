@@ -81,13 +81,34 @@ console.log("5)Navigator---------------------")
 console.log(navigator);
 
 //a)navigator.onLine: detect internet connection. if internet connected then return true, otherwise false.
-console.log(navigator.onLine);
+console.log("navigator.onLine: "+navigator.onLine);
 
 //b)navigator.userAgent: it contains info like browser name, OS info and version
-console.log(navigator.userAgent);
+console.log("navigator.userAgent: "+navigator.userAgent);
 
 
+//6)Screen: provide info about the screen like height, width, orientation etc
+console.log("6)Screen-------------------------");
+console.log(screen);
+
+// a)screen.height: gives the total screen height
+console.log("Screen.height: "+screen.height);
+
+// b)screen.width: gives the total screen width
+console.log("screen.width: "+screen.width);
+
+// c)screen.orientation: gives the landscape or portrait mode
+console.log("screen.orientation: ",screen.orientation);
+
+// d)innerHeight: gives the height of visible browser area
+console.log("innerHeight: ",innerHeight);
+
+// e)innerWidth: gives the width of visible browser area
+console.log("innerWidth: ",innerWidth);
+
+// f)outerHeight: Total browser height including:Toolbar, Tabs, Borders
+console.log("outerHeight: ",outerHeight);
 
 
-
-
+// g)outerWidth: Total browser width including UI
+console.log("outerWidth: ",outerWidth);
