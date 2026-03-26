@@ -112,3 +112,32 @@ console.log("outerHeight: ",outerHeight);
 
 // g)outerWidth: Total browser width including UI
 console.log("outerWidth: ",outerWidth);
+
+
+// 7)Dialog or Window methods: built-in popup function provided by window object. used to interact with user(alert, confirm, prompt)
+console.log("7)Dialog or Window methods------------------");
+
+//a)prompt(): used to take the input from user side, always take the input as String, if canceled then by default take null.
+console.log("a)prompt()------");
+
+// let a = prompt("Provide value of a") //always take input in String
+// console.log("Value: "+a+" and typeOf a: "+typeof a);
+
+// let b = parseInt(prompt("Enter value"))//extract the number from string using parser method
+// console.log("Value: "+b+" and typeOf b: "+typeof b);
+
+// let c = Number(prompt("Enter value: ")) //recommended to use Number()
+// console.log("Value: "+c+" and typeOf c: "+typeof c);
+
+
+//b)alert(): shows a simple message. only with OK button. used for debug, notificatin etc...
+console.log("b)alert()------");
+// alert("Don't use mobiles here.....!!")
+
+
+//c)confirm(): it will display a popup message with OK & CANCEL button. used for Delete confirmation, Logout confirmation etc...
+console.log("c)confirm()------");
+let res = confirm("Are u sure for Logout?")
+console.log("Confirm: "+res);
+
+
