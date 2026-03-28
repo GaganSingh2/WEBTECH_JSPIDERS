@@ -2,7 +2,7 @@ let body = document.body
 let table = document.createElement('table')
 table.style.borderSpacing = '10px'
 table.style.textAlign = "center"
-table.style.border = "2px solid black"
+// table.style.border = "2px solid black"
 table.style.backgroundColor = 'aqua'
 table.style.fontSize = '20px'
 table.style.margin = "20px auto"
@@ -25,7 +25,7 @@ th1.innerText = "Name"
 th1.style.color = 'blue'
 th1.style.fontSize = '25px'
 th1.style.backgroundColor = 'yellow'
-
+th1.textContent
 //Table Header2
 let th2 = document.createElement('th')
 th2.innerText = "Course"
@@ -99,4 +99,4 @@ td16.innerText = "Pune"
 row4.append(td13,td14,td15,td16)
 
 table.append(row1,row2,row3,row4)
-body.appendChild(table)
+body.appendChild(table)--/91
