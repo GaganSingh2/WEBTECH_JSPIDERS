@@ -70,3 +70,24 @@ console.log("Div: ",tagName);
 
 let bold = document.querySelector('b')//return null bcz bold tag not present
 console.log("Bold: ",bold);
+
+
+// 6)querySelectorAll("#idName/ .className / tagName"):select all matching element based on idName, className and tagName. return a collection called NodeList. almost similar to array but not array methods are allow, except forEach and access elements using indexes 
+console.log("querySelectorAll('#idName/ .className / tagName')--------");
+
+let headings = document.querySelectorAll('#dom')
+console.log("Headings: ",headings);
+console.log("headings[1]: ",headings[1]);
+
+let paras = document.querySelectorAll('.para')
+console.log("Paragraphs: ",paras);
+console.log("paras[3]: ",paras[3]);
+
+
+let tagNames = document.querySelectorAll('div')
+console.log("Divs: ",tagNames);
+console.log("tagNames[1]: ",tagNames[1]);
+
+
+let bolds = document.querySelectorAll('b')//return null bcz bold tag not present
+console.log("Bold: ",bold);
