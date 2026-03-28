@@ -56,3 +56,17 @@ console.log("spanTag[2]: ",spanTag[2]);
 console.log("spanTag[9]: ",spanTag[9]);
 
 
+// 5)querySelector("#idName/ .className / tagName"):select and return only first matching element, i.e. return single element. then stop after first match. if not found then return null.
+console.log("querySelector('#idName/ .className / tagName')--------");
+
+let heading = document.querySelector('#dom')
+console.log("Heading: ",heading);
+
+let para1 = document.querySelector('.para')
+console.log("Paragraph1: ",para1);
+
+let tagName = document.querySelector('div')
+console.log("Div: ",tagName);
+
+let bold = document.querySelector('b')//return null bcz bold tag not present
+console.log("Bold: ",bold);
