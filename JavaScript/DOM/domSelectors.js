@@ -91,3 +91,5 @@ console.log("tagNames[1]: ",tagNames[1]);
 
 let bolds = document.querySelectorAll('b')//return null bcz bold tag not present
 console.log("Bold: ",bold);
+
+
