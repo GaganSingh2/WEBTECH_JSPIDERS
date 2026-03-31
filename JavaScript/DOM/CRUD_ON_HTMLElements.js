@@ -100,3 +100,22 @@ console.log("vii)element.after(newElement)---------------");
 let h2 = document.createElement('h2')
 h2.textContent = "Footer"
 body.after(h2)
+
+
+// viii)parentEle.removeChild(childElement): remove a child node from a parent element, parent refernce is required.if childNode not inside the parent element then it will throw error called 'NotFoundError'. we can remove only child element
+console.log("viii)parentEle.removeChild(childElement)--------");
+
+let parentDiv = document.getElementById('parent')
+let childHead = document.querySelector('b')
+parentDiv.removeChild(childHead) //remove childELement
+
+
+// ix)parentEle.remove(childElement): its directly removes an element. we can remove self element and child element.
+console.log("ix)parentEle.remove(childElement)----------");
+
+let parentDiv2 = document.getElementById('parent')
+let childHead2 = document.querySelector('u')
+parentDiv2.remove(childHead2) //remove childElemetn
+
+let selfEle = document.getElementById('btn')
+selfEle.remove() //remove selfElement
