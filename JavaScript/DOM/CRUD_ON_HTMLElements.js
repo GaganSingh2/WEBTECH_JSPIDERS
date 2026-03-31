@@ -78,3 +78,25 @@ console.log(setContent.innerHTML);
 body.append(setContent.innerHTML)
 
 
+// v)parentEle.prepend(child1,child2,'text'........):it is used to insert element or text at the beginning or top of the parent element.
+console.log("v)parentEle.prepend(child1,child2,'text'........)--------");
+
+let para3 = document.createElement('p')
+para3.textContent = "Paragraph-3"
+body.prepend(para3)
+
+
+//vi)parentEle.before(newElement): it print the before the parent or given tag (here he print before the body tag)
+console.log("vi)element.before(newElement)---------------");
+
+let h1 = document.createElement('h1')
+h1.textContent = "Title"
+body.before(h1)
+
+
+//vii)parentEle.after(newElement): //it print the after the parent or given tag (here he print after the body tag)
+console.log("vii)element.after(newElement)---------------");
+
+let h2 = document.createElement('h2')
+h2.textContent = "Footer"
+body.after(h2)
