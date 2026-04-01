@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: aqua;
+        }
+        .blue{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="hello">Hello JavaScript</div>
+    <script>
+        let div = document.querySelector('div')
+        // console.log(div);
+        // div.style.backgroundColor = 'aqua'
+        // div.style.color = 'green'
+        // div.style.fontSize = '30px'
+
+        // set the className by using JS
+        // div.className = 'demo'
+        // let classNameSet1 = document.querySelector('.demo')
+        // console.log(classNameSet1);
+        // classNameSet1.style.backgroundColor = 'green'
+        // classNameSet1.style.color = 'aqua'
+        // classNameSet1.style.fontSize = '30px'
+
+ // again, if we set the className by using JS then old one is replace with new one
+        // div.className = 'greet'
+        // let greet = document.querySelector('.greet')
+        // console.log(greet);
+        // greet.style.backgroundColor = 'red'
+        // greet.style.color = 'black'
+        // greet.style.fontSize = '50px'
+
+
+        // div.className = 'red blue'
+        // div.className = 'green' //className will override previous classes to overcome this we have classList
+
+        //classList will add more than one className. and we can provide style using the all className.
+        div.classList.add('red')
+        div.classList.add('blue')
+        div.classList.add('green')
+
+        // div.classList.remove('green') //remove the className
+
+        // div.classList.toggle('red')//if given className is present then it will remove else it will add the given className
+        div.classList.toggle('red1')
+    </script>
+</body>
+</html>
