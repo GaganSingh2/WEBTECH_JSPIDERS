@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            
+        }
+        .card {
+            height: 300px;
+            width: 280px;
+            margin: 30px;
+            /* background-color: green; */
+            /* display: inline-block; */
+            border: 2px solid black;
+            border-radius: 5px;
+            box-shadow: 2px 4px 6px black;
+        }
+
+
+        img {
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .desc {
+            padding: 7px 2px 0 10px;
+        }
+
+        .card:hover{
+            box-shadow: 4px 8px 12px green;
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="container"></div>
+    <script src="fakeStoreApi.js"></script>
+</body>
+
+</html>
+<!-- id title price image -->
