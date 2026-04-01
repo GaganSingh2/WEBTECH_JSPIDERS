@@ -99,4 +99,7 @@ td16.innerText = "Pune"
 row4.append(td13,td14,td15,td16)
 
 table.append(row1,row2,row3,row4)
-body.appendChild(table)--/91
+body.appendChild(table)
+
+// table.remove() by using remove() we can remove self element and child nodes
+// table.removeChild(row3) we can remove only child nodes
