@@ -1,7 +1,33 @@
+
+
 let form = document.querySelector("form")
+
+// form.addEventListener("submit", function(event){
+//     event.preventDefault()
+//     alert("Are U Sure?")
+//     console.log("Form Submitted");
+// })
+
+
+//Extracting Data from Form-------
+// form.addEventListener("submit", function(event){
+//     event.preventDefault()
+
+//     let inp = document.querySelector("input")
+//     console.dir(inp);
+//     console.log(inp.value);
+    
+// })
+
 
 form.addEventListener("submit", function(event){
     event.preventDefault()
-    alert("Are U Sure?")
-    console.log("Form Submitted");
+
+    let user = document.querySelector("#user")
+    let pass = document.querySelector("#pass")
+    // console.dir(inp);
+    console.log("UserName: "+ user.value);
+    console.log("Password: "+pass.value);
+    
+    alert(`Hi ${user.value}, your password is set to ${pass.value}`)
 })
