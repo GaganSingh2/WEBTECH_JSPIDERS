@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,150);
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn{
+    width: 150px;
+    height: 150px;
+    border: 3px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.green{background: green;}
+.red{background: red;}
+.yellow{background: yellow;}
+.blue{background: blue;}
+
+.flash{
+    background: wheat !important;
+}
