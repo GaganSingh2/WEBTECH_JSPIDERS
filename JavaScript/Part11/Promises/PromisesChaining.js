@@ -15,12 +15,12 @@
 //     (data) => { //if this condition is true, then execute
 //         console.log("Success, Your Data was Saved: " + data);
 //         //then this inner function will execute
-//         saveToDB("Hello World", 
+//         saveToDB("Gagan", 
 //             //if this condition is true, then execute
 //             (data) => {
 //                 console.log("Success, Your Data was Saved: " + data);
                 
-//                 saveToDB("Gagan", 
+//                 saveToDB("Dishaa", 
 //                     //if this condition is true, then execute
 //                     (data)=>{
 //                         console.log("Success, Your Data was Saved: " + data);
