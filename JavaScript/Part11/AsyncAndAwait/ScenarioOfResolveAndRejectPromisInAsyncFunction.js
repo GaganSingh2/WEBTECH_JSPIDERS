@@ -30,8 +30,34 @@ async function greet3() {
 }
 console.log(greet3());
 /**
- * Output: Promise {<pending>: }//Pending bcz it is return Promise immediately not waiting for calling
+ * Output: Promise {<pending>: i}//Pending bcz it is return Promise immediately not waiting for calling
  *         [PromiseState]: "fulfilled"//Promise got resolve so after that it will return as fulfilled
  *         [PromiseResult]: "Resolved-3"
+ *  
+ */
+
+//Reject Promise Scenarios-----------------
+//1)Throw an Error -> Rejected Promise
+async function greet4() {
+    throw new Error("Invalid!")
+}
+console.log(greet4());
+/**
+ * Output: Promise {<rejected>: Error: Invalid}
+ *         [PromiseState]: "rejected"
+ *         [PromiseResult]: Error: Invalid
+ * Internally JS: 
+ * convert throw new Error("Invalid") => return  Promise.reject(new Error("Invalid"))
+ */
+
+//2)Explicitly return the Reject Promise
+async function greet5() {
+    return Promise.reject("Invalid!")
+}
+console.log(greet5());
+/**
+ * Output: Promise {<pending>: i}//Pending bcz it is return Promise immediately not waiting for calling
+ *         [PromiseState]: "rejected"//Promise got resolve so after that it will return as fulfilled
+ *         [PromiseResult]: "Invalid"
  *  
  */
