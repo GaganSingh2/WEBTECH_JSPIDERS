@@ -37,7 +37,7 @@ async function hiii() {
 }
 console.log(hiii());
 /**
- * Output: Promise {<fulfilled>: Error: Something Went Wrong}
+ * Output: Promise {<rejected>: Error: Something Went Wrong}
  *         [PromiseState]: "rejected"
  *         [PromiseResult]: Error: Something Went Wrong
  * 
