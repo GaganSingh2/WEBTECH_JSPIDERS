@@ -32,6 +32,7 @@
 
 let inp = document.querySelector("#text")
 let h2 = document.querySelector("h2")
+
 inp.addEventListener("input", function(){
     //keep only letters and spaces
     let filterVal = inp.value.replace(/[^a-zA-Z ]/g,"")
@@ -40,5 +41,5 @@ inp.addEventListener("input", function(){
     inp.value = filterVal
 
     //Show in Heading
-    h2.innerText = inp.value
+    h2.innerText ="Hello " + inp.value
 })
