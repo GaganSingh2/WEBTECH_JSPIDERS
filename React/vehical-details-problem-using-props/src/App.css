@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.motorcycle-card {
+  width: 450px;
+  padding: 25px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  margin: 10px;
+}
+
+.motorcycle-card:hover {
+  transform: translateY(-5px);
+}
+
+.motorcycle-card h1 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.motorcycle-card p {
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+.connected {
+  color: green;
+  font-weight: bold;
+}
+
+.offline {
+  color: red;
+  font-weight: bold;
+}
