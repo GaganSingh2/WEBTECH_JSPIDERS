@@ -137,7 +137,7 @@ export default class DisplayItemCategory extends Component {
                         filterProducts.map((product) => {
                             return <ProductCard product={product} />
                         })
-                    }\
+                    }
                 </div>
 
 

@@ -5,13 +5,18 @@ import Products from './components/Products'
 import IndianState from './components/IndianState'
 import IndianUnionTerritories from './components/IndianUnionTerritories'
 import DisplayItemCategory from './components/DisplayItemCategory'
+import StudentDetails from './components/StudentDetails'
 
 function App() {
   
 
   return (
     <>
+      {/* without using Key */}
       {/* <Student /> */}
+      
+      {/* After using key----- */}
+      <StudentDetails />
 
       {/* Rendering the Product Details */}
       {/* <Products /> */}
@@ -22,7 +27,7 @@ function App() {
       {/* Rendering the Indian Union Territories */}
       {/* <IndianUnionTerritories /> */}
 
-      <DisplayItemCategory />
+      {/* <DisplayItemCategory /> */}
     </>
   )
 }
