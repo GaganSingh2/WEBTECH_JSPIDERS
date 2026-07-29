@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import About from './components/About'
 import { Routes, Route } from "react-router"
+import NotFound from './components/NotFound'
 function App() {
 
 
@@ -31,6 +32,8 @@ function App() {
 
         {/* if we pass http://localhost:5173/footer so this component will render */}
         <Route path="/footer" element={<Footer />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   )
