@@ -5,9 +5,11 @@ import WhiteBulb from '../assets/images/WhiteBulb.webp'
 const initalVal = 0;
 function CounterUsingUseState() {
     const [count, setCount] = useState(initalVal)
-    const [name, setName] = useState("Submit")
+    const [status, setStatus] = useState("Submit")
     const [bulb, setBulb] = useState(false)
     const [skill, setSkill] = useState(["Java","SQL"])
+    const[name, setName] = useState("")
+    const[user, setUser] = useState({name:"Gagan",age:22})
 
     const handleIncrement = () => {
         setCount(count < 10 ? count + 1 : count = 10)
@@ -22,19 +24,27 @@ function CounterUsingUseState() {
         // setName("Submitted")
 
         // if we want to change the Submit to Submitted after 2sec
-        setName("Submitting..");
+        setStatus("Submitting..");
         setTimeout(() => {
-            setName("Submitted")
+            setStatus("Submitted")
         }, 2000);
 
         //if we want to again change the Submitted to Submit after 2sec
         setTimeout(() => {
-            setName("Submit")
+            setStatus("Submit")
         }, 4000)
     }
 
     const handleBulb = () => {
         setBulb(!bulb)
+    }
+
+    const handleName = (e)=>{
+        setName(e.target.value)
+    }
+
+    const handleUser = ()=>{
+        setUser({...user, age: 24})
     }
 
     // ... (spread Operator) it is used to store previous data and then merge the provide data and original array is remain same.
@@ -55,6 +65,17 @@ function CounterUsingUseState() {
             <hr />
             <h1>My Skills - {`${skill}`}</h1>
             <button onClick={handleSKill}>Update Skill</button>
+
+            <hr />
+            <h1>Hello {name === "" ? "Stranger" : name}</h1>
+            <input type= "text" value={name} onChange={handleName} placeholder='Enter your name'/>
+
+            <hr />
+            <h1>User Details Before Updating</h1>
+            <h3>Name: {user.name}</h3>
+            <h5>Age: {user.age}</h5>
+
+            <button onClick={handleUser}>Update User</button>
         </div>
     )
 }
