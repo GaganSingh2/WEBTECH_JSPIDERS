@@ -21,10 +21,10 @@ function App() {
       {/* <CounterUsingUseEffect /> */}
 
     {/* useRef()------------ */}
-    <CounterUsingUseRef />
+    {/* <CounterUsingUseRef /> */}
 
     {/* useReducer---------- */}
-    {/* <CounterUsingUseReducer /> */}
+    <CounterUsingUseReducer />
     
     {/* Example of useReducer */}
     {/* <TodoListUsingUseReducer /> */}
