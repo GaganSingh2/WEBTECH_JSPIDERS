@@ -1,13 +1,16 @@
 import React from 'react'
 import './App.css'
-import LoginPage from './components/LoginPage'
+import LoginPageWithUncontrolledForm from './components/LoginPageWithUncontrolledForm'
+import LoginPageWithControlledForm from './components/LoginPageWithControlledForm'
 
 function App() {
   
 
   return (
     <>
-      <LoginPage />
+      <LoginPageWithUncontrolledForm />
+      {/* <LoginPageWithControlledForm /> */}
+
     </>
   )
 }
