@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import '../LoginPage.css'
+
 
 function LoginPage({onLogin}) {
     const [formData, setFormData] = useState({
@@ -41,9 +43,9 @@ function LoginPage({onLogin}) {
                     <input
                         type="text"
                         placeholder='Enter username'
-                        name="" id=""
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)} />
+                        name="username" id=""
+                        value={formData.username}
+                        onChange={handleChange} />
                 </div>
 
                 <div className='form-group'>
@@ -51,9 +53,9 @@ function LoginPage({onLogin}) {
                     <input
                         type="password"
                         placeholder='Enter Password'
-                        name="" id=""
-                        value={password}
-                        onChange={(e) => setUsername(e.target.value)} />
+                        name="password" id=""
+                        value={formData.password}
+                        onChange={handleChange} />
                 </div>
 
                 <div className="role-section">
@@ -62,9 +64,9 @@ function LoginPage({onLogin}) {
                         <label>
                             <input
                                 type="checkbox"
-                                name="student"
+                                name="Student"
                                 id=""
-                                checked = {role.student}
+                                checked = {formData.role === "Student"}
                                 onChange={handleRoleChange}
                             />
                             Student
@@ -73,9 +75,9 @@ function LoginPage({onLogin}) {
                          <label>
                             <input
                                 type="checkbox"
-                                name="trainer"
+                                name="Trainer"
                                 id=""
-                                checked = {role.trainer}
+                                checked = {formData.role === "Trainer"}
                                 onChange={handleRoleChange}
                             />
                             Trainer
