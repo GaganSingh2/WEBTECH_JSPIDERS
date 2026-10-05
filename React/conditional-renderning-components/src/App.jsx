@@ -24,8 +24,8 @@ function App() {
     {/* If...Else Conditional Rendering-------- */}
     {/* <IfElseConditionalRendering /> */}
 
-    {/* <ProductCardUsingIfElse productInfo = {productInfo}/> */}
-    {/* <ProductSwitch productInfo = {productInfo}/> */}
+    {/* <ProductCardUsingIfElse productInfo = {productInfo}/>
+    <ProductSwitch productInfo = {productInfo}/> */}
 
     {/* Ternary Conditional Rendering------------ */}
     {/* <TernaryConditionalRendering isAuth={true} user={"Gagan"}/> */}
@@ -34,7 +34,8 @@ function App() {
     {/* <LogicalAndConditionalRendering /> */}
 
      {/* Logical OR (||) Conditional Rendering--------- */}
-    {/* <LogicalOrConditionalRendering user={"Gagan"}/> */}
+    {/*<LogicalOrConditionalRendering user={""}/>*/} {/*here "" empty string is a falsy value so it give fallback value */}
+   {/*<LogicalOrConditionalRendering user={"Gagan"}/>*/} {/**here "Gagan" is valid string  */}
 
      {/* Switch Case Conditional Rendering--------- */}
     <SwitchCaseConditionalRendering />

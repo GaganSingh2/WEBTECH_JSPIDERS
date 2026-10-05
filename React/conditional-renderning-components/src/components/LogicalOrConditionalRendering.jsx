@@ -5,7 +5,7 @@ export default class LogicalOrConditionalRendering extends Component {
       super(props)
     
       this.state = {
-         isAuth: true
+         isAuth: false
       }
     }
   render() {
